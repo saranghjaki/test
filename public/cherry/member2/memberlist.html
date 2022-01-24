@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+ <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+	 <link href="../../_bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+<title>stellar my html projects</title>
+
+<!-- css내용 -->
+
+<p class="text-center fs-1"">회원관리 리스트</p>
+</head>
+
+<body>
+	<center>
+		<table
+			class="table table-hover <!-- table-sm  -->d-inline-block  w-75 ">
+			<thead class="table-info">
+				<tr w-auto>
+					<th>NO</th>
+					<th>check</th>
+					<th>ID</th>
+					<th>이름</th>
+					<th>생년월일</th>
+					<th>성별</th>
+					<th>회원등급 <!-- Button trigger modal -->
+						<button type="button"
+							class="badge rounded-pill bg-light text-dark"
+							data-bs-toggle="modal" data-bs-target="#exampleModal">?
+						</button> <!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1"
+							aria-hidden="true">
+							<div class="modal-dialog  modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLabel">한샘 멤버십 회원
+											기준</h3>
+										<button type="button" class="btn-close"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="d-inline"><span class= "text-danger "> HVIP/VIP/GOLD/ROYAL/FAMILY 등급</sapn> 
+										<span class= "text-dark "><small> 에 따라 다양한 혜택을 드립니다. 한샘
+										멤버십 등급 기준에 따라 한샘 포인트 적립은 물론 생할용품 쿠폰, 이벤트 초대, 무료 주차 등 다양한 혜택을
+										드립니다. 등급은 매월 최근 1년간 구매 금액을 기준으로 산정되며, 승급 시점으로부터 1년간 등급이 유지됩니다</span>
+										</span></div>
+										<!-- table s -->
+										<table class="table"><small>
+										 <thead>
+											<tr class= "text-warning ">
+												<td  w-20></td>
+												<td>HVIP</td>
+												<td>VIP</td>
+												<td>GOLD</td>
+												<td>ROYAL</td>
+												<td>FAMILY</td>
+
+											</tr>
+										</thead>
+											<tr>
+												<th>등급기준</th>
+												<td>최근 1년간 2,000만원 이상 구매 고객 ※ 유지조건 : 등급 유지기간 동안 추가
+													200만원 구매</td>
+												<td>최근 1년간 700만원 이상 구매 고객 ※ 유지조건 : 등급 유지기간 동안 추가 70만원
+													구매</td>
+												<td>최근 1년간 300만원 이상 구매 고객 ※ 유지조건 : 등급 유지기간 동안 추가 30만원
+													구매</td>
+												<td>최근 1년간 30만원 이상 구매 고객 ※ 유지조건 : 등급 유지기간 동안 추가 구매이력 발생</td>
+												<td>신규</td>
+											</tr>
+											
+											<tr>
+												<th>승급포인트</th>
+												<td>최대 20,000점</td>
+												<td>최대 10,000점</td>
+												<td>최대 5,000점</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+										
+											<tr>
+												<th>포인트 혜택</th>
+												<td colspan="5">한샌몰+전국 생활용품관에서 0.5%적립</td>
+											</tr>
+										</small>
+										</table>
+										<!-- table e -->
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">닫기</button>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+					</th>
+
+				</tr>
+			</thead>
+
+			<tr>
+				<th>1</th>
+				<td>
+					<div>
+						<input class="form-check-input" type="checkbox"
+							id="checkboxNoLabel" value="" aria-label="...">
+					</div>
+				</td>
+				<td>mikey</td>
+				<td><a href="./memberView.html">미키</a></td>
+				<td>220101</td>
+				<td>남성</td>
+				<td>GOLD</td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td>
+					<div>
+						<input class="form-check-input" type="checkbox"
+							id="checkboxNoLabel" value="" aria-label="...">
+					</div>
+				</td>
+				<td>mini</td>
+				<td>미니</td>
+				<td>220102</td>
+				<td>여성</td>
+				<td>LOYAL</td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td>
+					<div>
+						<input class="form-check-input" type="checkbox"
+							id="checkboxNoLabel" value="" aria-label="...">
+					</div>
+				</td>
+				<td>pooh</td>
+				<td>푸우</td>
+				<td>990101</td>
+				<td>남성</td>
+				<td>HVIP</td>
+			</tr>
+
+			<tr>
+				<th>4</th>
+				<td>
+					<div>
+						<input class="form-check-input" type="checkbox"
+							id="checkboxNoLabel" value="" aria-label="...">
+					</div>
+				</td>
+				<td>pig44</td>
+				<td>피그</td>
+				<td>890101</td>
+				<td>여성</td>
+				<td>FAMILY</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>
+					<div>
+						<input class="form-check-input" type="checkbox"
+							id="checkboxNoLabel" value="" aria-label="...">
+					</div>
+				</td>
+				<td>fish</td>
+				<td>인어공주</td>
+				<td>990101</td>
+				<td>여성</td>
+				<td>FAMILY</td>
+			</tr>
+		</table>
+	
+			<br>
+	
+		<div class="btn-toolbar mb-3 d-block"  role="toolbar" aria-label="Toolbar with button groups">
+		  <div class="btn-group me-2" role="group" aria-label="First group">
+		    <button type="button" class="btn btn-outline-primary">1</button>
+		    <button type="button" class="btn btn-outline-primary">2</button>
+		    <button type="button" class="btn btn-outline-primary">3</button>
+		    <button type="button" class="btn btn-outline-primary">4</button>
+		    <button type="button" class="btn btn-outline-primary">5</button>
+		  </div>
+		 </center>   
+	
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+ 
+	  <!-- Button trigger modal -->
+	<a href="./memberForm.html" type="button" class="btn btn-info me-md-2" data-bs-toggle="modal"
+		role="button" data-bs-target="#register">
+	  등록
+	</a>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        회원정보를 등록하시겠습니까? 확인 클릭 시 회원등록 페이지로 이동합니다
+	      </div>
+	      <div class="modal-footer">
+	      <a type="button" class="btn btn-primary" href="./memberForm.html" >확인</a>
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+	        
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+</body>
+<!-- <script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+	crossorigin="anonymous"></script> -->
+	<script
+		src="../../_bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
